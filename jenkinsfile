@@ -20,7 +20,7 @@ pipeline {
         stages {
             stage('Create Job using Job DSL') {
                 steps {
-                    jobDsl targets: ['jobdsl.groovy']
+                    jobDsl targets: ['aplicacion-webpage/jobdsl.groovy']
             }
         }
     }
