@@ -1,13 +1,13 @@
-@Library('intentofinal') _ 
+pipeline {
+    agent any
 
-scan.scanner(
-    branch: "master" ,
-    gitrepo: "https://github.com/laurabecerra1502/aplicacion-webpage.git" ,
-    scannerHome: "sonarqube", 
-    projectKey: "3labreto",
-    projectName: "3labreto",
-    projectVersion: "1.0",
-    sources: "/var/jenkins_home/workspace/estasies",
-    sonarHostUrl: "http://sonarqube:9000 ",
-    sonarLogin: "admin",
-    sonarPassword: "1234")
+    stages {
+        stage('Clone Repositorio') {
+            steps {
+                git branch: 'master', url: 'https://github.com/laurabecerra1502/devops.git'
+            }
+Load: 'jenkinsnfile' 
+
+       }
+    }
+}
