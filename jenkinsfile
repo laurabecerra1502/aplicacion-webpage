@@ -4,10 +4,11 @@ pipeline {
     stages {
         stage('Clone Repositorio') {
             steps {
-                git branch: 'master', url: 'https://github.com/laurabecerra1502/devops.git'
+                git branch: 'main', url: 'https://github.com/laurabecerra1502/devops.git'
+                script {
+                    load: 'jenkinsfile' 
+                }
             }
-Load: 'jenkinsnfile' 
-
        }
     }
 }
