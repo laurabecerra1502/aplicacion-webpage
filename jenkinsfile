@@ -1,0 +1,16 @@
+@Library('intentofinal') _ 
+
+def params = [
+    branch: "master" ,
+    gitrepo: "https://github.com/laurabecerra1502/aplicacion-webpage.git" ,
+    scannerHome: "sonarqube" , 
+    projectKey: "3labreto" ,
+    projectName: "3labreto" ,
+    projectVersion: "1.0" ,
+    sources: "/var/jenkins_home/workspace/estasies" ,
+    sonarHostUrl: "http://sonarqube:9000 " ,
+    sonarLogin: "admin" ,
+    sonarPassword: "1234"
+]
+
+scan.scanner(params)
