@@ -5,10 +5,15 @@ pipeline {
         stage('Clone Repositorio') {
             steps {
                 git branch: 'main', url: 'https://github.com/laurabecerra1502/devops.git'
-                script {
-                    load: 'jenkinsfile' 
-                }
             }
        }
+
+        stage('Load Jenkinsfile') {
+            steps {
+                script {
+                    load 'jenkinsfile'
+                }
+            }
+        }
     }
 }
