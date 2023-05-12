@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    stages {
+/*    stages {
         stage('Clone Repositorio') {
             steps {
                 git branch: 'main', url: 'https://github.com/laurabecerra1502/devops.git'
@@ -13,6 +13,14 @@ pipeline {
                 script {
                     load 'jenkinsfile'
                 }
+            }
+        }
+    }
+*/
+        stages {
+            stage('Create Job using Job DSL') {
+                steps {
+                    jobDsl target: ['./jobdsl.groovy']
             }
         }
     }
