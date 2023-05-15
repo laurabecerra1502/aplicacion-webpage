@@ -1,26 +1,18 @@
 pipeline {
     agent any
 
-/*    stages {
-        stage('Clone Repositorio') {
-            steps {
-                git branch: 'main', url: 'https://github.com/laurabecerra1502/devops.git'
-            }
-       }
-
-        stage('Load Jenkinsfile') {
+    stages {
+        stage('Call another Jenkinsfile') {
             steps {
                 script {
-                    load 'jenkinsfile'
+                    def params = [
+                        string(branch: 'main', value: 'value1'),
+                    ]
+
+                    def jenkinsfile = load 'https://github.com/laurabecerra1502/devops./jenkinsfile'
+                    scriptPath('jenkinsfile')
+                    jenkinsfile.execute(params)
                 }
-            }
-        }
-    }
-*/
-        stages {
-            stage('Create Job using Job DSL') {
-                steps {
-                    jobDsl targets: ['aplicacion-webpage/jobdsl.groovy']
             }
         }
     }
