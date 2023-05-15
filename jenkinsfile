@@ -9,7 +9,7 @@ pipeline {
                         string(branch: 'main', value: 'value1'),
                     ]
 
-                    def jenkinsfile = load 'https://github.com/laurabecerra1502/devops./jenkinsfile'
+                    def jenkinsfile = load 'https://github.com/laurabecerra1502/devops.git'
                     scriptPath('jenkinsfile')
                     jenkinsfile.execute(params)
                 }
