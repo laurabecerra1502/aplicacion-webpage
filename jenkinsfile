@@ -9,8 +9,8 @@ pipeline {
                         string(branch: 'main', value: 'value1'),
                     ]
 
-                    def jenkinsfile = load 'https://github.com/laurabecerra1502/devops.git'
-                    scriptPath('jenkinsfile')
+                    def jenkinsfile = sh(script: "curl -s https://github.com/laurabecerra1502/devops./jenkinsfile", returnStdout: true)
+                    jenkinsfile = new GroovyShell().parse(jenkinsfile)
                     jenkinsfile.execute(params)
                 }
             }
