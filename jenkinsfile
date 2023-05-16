@@ -1,5 +1,8 @@
 @Library('SonarQube') _
 
 build.good(msn: 'Lauri')
+sonarqube.checkout(branch: 'main', gitrepo: 'https://github.com/laurabecerra1502/aplicacion-webpage.git')
+
+
 
 
