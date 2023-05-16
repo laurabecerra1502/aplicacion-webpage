@@ -1,6 +1,6 @@
-@Library('SonarQube@main') _
+@Library('SonarQube') _
 
-reto(msn: 'Lauri')
+reto(msn:'Lauri')
 
 
 
