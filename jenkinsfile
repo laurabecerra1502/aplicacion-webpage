@@ -1,4 +1,4 @@
-@Library('SonarQube') _
+@Library('SonarQube@main') _
 
 jenkinsfile.jenkins(msn: 'Lauri', branch: 'main')
 
