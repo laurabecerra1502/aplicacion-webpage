@@ -1,6 +1,6 @@
 @Library('SonarQube') _
 
-reto(msn:'Lauri')
+reto(mensaje:'Lauri',variables:'exitoso')
 
 
 
