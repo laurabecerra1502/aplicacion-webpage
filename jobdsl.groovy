@@ -1,15 +1,19 @@
-pipelineJob('jobprueba3') {
+pipelineJob('pruebita') {
     definition {
         cpsScm {
             scm {
                 git {
                     remote {
-                        url('https://github.com/laurabecerra1502/devops.git')
+                        url('https://github.com/laurabecerra1502/aplicacion-webpage.git')
                     }
                     branches('main')
                     scriptPath('jenkinsfile')
                 }
             }
+            triggers {
+                if { branch 'main' }
+                    githubPush()
+            }                        
         }
     }
 }
