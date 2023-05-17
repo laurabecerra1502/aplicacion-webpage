@@ -11,7 +11,6 @@ pipelineJob('pruebita') {
                 }
             }
             triggers {
-                if { branch 'main' }
                     githubPush()
             }                        
         }
