@@ -1,4 +1,4 @@
-pipelineJob('pruebita') {
+pipelineJob('retodevops') {
     definition {
         cpsScm {
             scm {
