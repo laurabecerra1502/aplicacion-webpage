@@ -10,10 +10,9 @@ pipelineJob('retodevops') {
                     scriptPath('jenkinsfile')
                 }
             }
+            triggers {
+                pollSCM('* * * * *')
+            }
         }
-    }
-    publishers {
-        mailer('laurabecerra@periferia-it.com', true, true)
-    }                        
+    }                     
 }
-    
