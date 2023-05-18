@@ -6,13 +6,15 @@ pipelineJob('retodevops') {
                     remote {
                         url('https://github.com/laurabecerra1502/aplicacion-webpage.git')
                     }
-                    branches('main')
+                    branches('feature')
                     scriptPath('jenkinsfile')
                 }
             }
-            triggers {
-                    githubPush()
-            }                        
+                
+            publishers {
+                mailer('laurabecerra@periferia-it.com', true, true)
+            }
         }
-    }
+    }                        
 }
+    
