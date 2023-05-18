@@ -2,7 +2,7 @@
 
 reto(message: 'Laura', 
     application: 'Aplicacion WebPage', 
-    home: 'sonarqube',
+    scannerHome: 'sonarqube',
     projectkey: 'reto1',
     projectname: 'reto1',
     version: '1.0',
