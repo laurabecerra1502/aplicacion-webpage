@@ -1,6 +1,15 @@
 @Library('SonarQube') _
 
-reto(mensaje: 'Laura Becerra', variable: 'Aplicacion WebPage', home: 'sonarqube')
+reto(message: 'Laura Becerra', 
+    application: 'Aplicacion WebPage', 
+    home: 'sonarqube',
+    key: 'reto1',
+    name: 'reto1',
+    version: '1.0',
+    sources: '/var/jenkins_home/workspace/projectjenkins',
+    url: 'http://sonarqube:900',
+    login: 'admin',
+    password: '1234')
 
 
 
