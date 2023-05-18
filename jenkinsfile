@@ -1,8 +1,8 @@
 @Library('SonarQube') _
 
-reto(message: 'Laura Becerra', 
+reto(message: 'Laura', 
     application: 'Aplicacion WebPage', 
-    home: 'sonarqube',
+    home:'sonarqube',
     key: 'reto1',
     name: 'reto1',
     version: '1.0',
