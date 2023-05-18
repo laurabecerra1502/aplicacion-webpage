@@ -2,12 +2,12 @@
 
 reto(message: 'Laura', 
     application: 'Aplicacion WebPage', 
-    home:'sonarqube',
-    key: 'reto1',
-    name: 'reto1',
+    scannerhome: 'sonarqube',
+    projectkey: 'reto1',
+    projectname: 'reto1',
     version: '1.0',
     sources: '/var/jenkins_home/workspace/projectjenkins',
-    url: 'http://sonarqube:900',
+    hosturl: 'http://sonarqube:900',
     login: 'admin',
     password: '1234')
 
