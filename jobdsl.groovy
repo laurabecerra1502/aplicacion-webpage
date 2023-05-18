@@ -10,11 +10,10 @@ pipelineJob('retodevops') {
                     scriptPath('jenkinsfile')
                 }
             }
-                
-            publishers {
-                mailer('laurabecerra@periferia-it.com', true, true)
-            }
         }
+    }
+    publishers {
+        mailer('laurabecerra@periferia-it.com', true, true)
     }                        
 }
     
