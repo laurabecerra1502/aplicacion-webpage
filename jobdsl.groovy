@@ -13,7 +13,7 @@ pipelineJob('retodevops') {
         }
 
         triggers {
-            cron('0 */3 * * 1-5')
+            scm('* * * * 1-5')
         }
     }
 }                     

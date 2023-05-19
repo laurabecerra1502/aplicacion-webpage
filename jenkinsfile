@@ -9,7 +9,7 @@ reto(message: 'Laura Becerra',
     sources: '/var/jenkins_home/workspace/projectjenkins',
     hosturl: 'http://sonarqube:9000',
     login: 'admin',
-    password: '1234')
+    password: 'admin1')
 
 
 
