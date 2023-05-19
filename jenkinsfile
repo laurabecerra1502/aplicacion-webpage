@@ -6,7 +6,7 @@ reto(message: 'Laura Becerra',
     projectkey: 'reto2',
     projectname: 'reto2',
     version: '1.0',
-    sources: '/var/jenkins_home/workspace/projectjenkins',
+    sources: '/var/jenkins_home/workspace/retodevops',
     hosturl: 'http://sonarqube:9000',
     login: 'admin',
     password: 'admin1')
