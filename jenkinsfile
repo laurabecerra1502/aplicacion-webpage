@@ -1,10 +1,10 @@
-@Library('SonarQube') _
+@Library('SonarQube@feature') _
 
 reto(message: 'Laura Becerra', 
     application: 'Aplicacion WebPage', 
     scannerHome: 'sonarqube',
-    projectkey: 'reto2',
-    projectname: 'reto2',
+    projectkey: 'reto3',
+    projectname: 'reto3',
     version: '1.0',
     sources: '/var/jenkins_home/workspace/projectjenkins',
     hosturl: 'http://sonarqube:9000',
