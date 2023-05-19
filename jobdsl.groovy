@@ -3,16 +3,17 @@ pipelineJob('retodevops') {
         cpsScm {
             scm {
                 git {
+                    branch('feature')
                     remote {
                         url('https://github.com/laurabecerra1502/aplicacion-webpage.git')
                     }
-                    branches('feature')
                     scriptPath('jenkinsfile')
-                }
-            }
-            triggers {
-                pollSCM('* * * * *')
-            }
+                } 
+            }      
         }
-    }                     
-}
+
+        triggers {
+            cron('0 */3 * * 1-5')
+        }
+    }
+}                     
