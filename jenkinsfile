@@ -9,7 +9,8 @@ reto(message: 'Laura Becerra',
     sources: '/var/jenkins_home/workspace/retodevops',
     hosturl: 'http://sonarqube:9000',
     login: 'admin',
-    password: '1234')
+    password: '1234',
+    buildimage: 'reto2')
 
 
 
